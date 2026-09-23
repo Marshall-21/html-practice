@@ -42,9 +42,27 @@ img {
     border: 2px solid #000000;   
 }
 
+.movie-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
 .flex-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-content: center;
 }
+
+.flex-item {
+    flex-basis: 100px;
+}
+
+#godfather-poster {
+    width: 500px;
+    height: auto;
+}
+
