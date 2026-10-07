@@ -71,11 +71,16 @@ img {
 
 .box {
     width: 100px;
-    height: 100px;
+    height: 200px;
     background-color: #1e3a5f;
     position: fixed;
     bottom: 20px;
     right: 20px;
+    transition: transform 0.5s;
+}
+
+.box:hover {
+    transform: translateY(20px);
 }
 
 .parent {
@@ -90,8 +95,21 @@ img {
     top: 200px;
 }
 
+a {
+    color: blue;
+    transition: color 0.9s;
+}
+
 a:hover{
     color: red;
+}
+
+a:active{
+    color: green;
+}
+
+a:visited{
+    color: pink;
 }
 
 .flex-container div:nth-child(even) {
