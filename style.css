@@ -17,19 +17,6 @@ p {
     line-height: 1.4;
 }
 
-img {
-    width: 50%;
-    height: auto;
-}
-
-#page-title {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    color: #1e3a5f;
-    position: sticky;
-    top: 200px;
-}
 
 .movie-title {
     font-size: 20px;
@@ -39,9 +26,6 @@ img {
 
 .movie {
     background-color: #ffffff;
-    padding: 30px;
-    margin: 40px;
-    border: 2px solid #000000;   
 }
 
 .movie-section {
@@ -65,12 +49,12 @@ img {
 }
 
 #godfather-poster {
-    width: 500px;
-    height: auto;
+    width: 400px;
+    height: auto6;
 }
 
 .box {
-    width: 100px;
+    width: 100px;i
     height: 200px;
     background-color: #1e3a5f;
     position: fixed;
@@ -79,15 +63,8 @@ img {
     transition: transform 0.5s;
 }
 
-.box:hover {
+.box:hover {8
     transform: translateY(20px);
-}
-
-.parent {
-    width: 300px;
-    height: 300px;
-    background-color: #f2f2f2;
-    position: relative;
 }
 
 #test {
@@ -121,6 +98,8 @@ a:visited{
 }
 
 .movie-poster {
+    width: 40%;
+    height: 70%;
     transition: transform 0.5s;
 }
 
@@ -128,7 +107,7 @@ a:visited{
     transform: scale(1.1);
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1000px) {
     h1 {
         font-size: 24px;
     }
@@ -136,5 +115,29 @@ a:visited{
     .movie-poster {
         height: auto;
         max-width: 100%;
+    }
+
+    #godfather-poster {
+        max-width: 70%;
+        height: auto;  
+    }
+
+    .movie-title {
+        font-size: 16px;
+    }
+
+    body {
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .movie-grid {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px;
     }
 }
