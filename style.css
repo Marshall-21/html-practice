@@ -145,3 +145,13 @@ a:active{
         gap: 8px;
     }
 }
+
+#once-upon-page {
+    background: linear-gradient(to bottom, #d4af37, white);
+    color: black;
+}
+
+#oppenheimer-page {
+    background: linear-gradient(to bottom, #ea580c, #4a150b);
+    color: #ffc857;
+}
